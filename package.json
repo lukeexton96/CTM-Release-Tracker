@@ -1,0 +1,21 @@
+{
+  "name": "gobuild",
+  "version": "1.0.0",
+  "description": "A node application that will utilise GOcd's API in order to display the most recent 3 releases for CTM",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Luke Exton",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "jsonfile": "^2.3.1",
+    "open": "0.0.5",
+    "read-json": "^1.0.3",
+    "request": "^2.73.0",
+    "write": "^0.3.1"
+  }
+}

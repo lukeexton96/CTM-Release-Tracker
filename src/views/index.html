@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="goBuild"> 
+
+<head>
+    <!-- Insert Style Sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Insert Favicon -->
+    <link rel="icon" type="image/ico" href="./images/favicon.ico"/>
+    <!-- Insert Angular Tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"> </script>
+    <!-- Insert Javascript Files -->
+    <script src="./controllers/mainController.js"></script> 
+</head>
+
+<body ng-controller="MainController">
+    <div class="titleContainer">
+        <div class="title">
+            <h1> ComparetheMarket.com - 42</h1>
+            <h2> GO - Tracking Releases </h2>
+        </div>
+
+        <div class="image">
+            <img src="./images/Marvin.ico" alt="Hitch Hikers Marvin!" />
+        </div>
+    </div>
+
+    <!-- Update Release Button -->
+    <div class = "updateRelease">
+        <button class="nextRelease" type="button" ng-click="showme=true"> Update Next Release </button>
+    </div>
+
+    <!-- Update Next Release Table -->
+    <div class="updateReleaseTable">
+        <form name="updateReleaseForm" ng-show="showme">
+            <table class="updateReleaseTable">
+                <tr class="noBorders">
+                    <th> Date</th>
+                    <td> <input type="text" name="nextDate" ng-model="nextDate" required> </td>
+                </tr>
+                <tr>
+                    <th> Release Number </th>
+                    <td> <input type="text" name="nextReleaseNumber" ng-model="nextReleaseNumber" required> </td>
+                </tr>
+            </table>
+
+            <div class = "updateRelease">
+                <input type="submit" class="nextRelease" ng-click="showme=false" value="Update!">
+            </div>   
+        </form>             
+    </div>
+        
+    <!-- Release Table -->
+    <div class="releaseTable">
+        <h1> Release Information - Life-Bretton </h1>
+
+        <table class="center">
+            <tr> 
+                <th class="topLeft"> </th>
+                <th> Date </th>
+                <th> Release Number </th>
+            </tr>
+             <tr> 
+                <th> Next Release </th>
+                <td> {{nextDate}} </td>
+                <td> {{nextReleaseNumber}} </td>
+            </tr>
+            <tr> 
+                <th> Current Release </th>
+                <td> {{currentReleaseDate}} </td>
+                <td> {{currentReleaseId}} </td>
+                 <td> {{currentReleaseName}} </td>
+            </tr>
+            <tr> 
+                <th> Last Release </th>
+                <td> {{lastReleaseDate}} </td>
+                <td> {{lastReleaseId}} </td>
+                 <td> {{lastReleaseName}} </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer class="footer">
+        Copyright &copy;
+        <!-- Script to pull current year -->
+        <script type="text/javascript">
+            var d = new Date()
+            document.write(d.getFullYear())
+        </script>
+        
+        <b>Compare</b>the<b>Market</b>.com. All rights reserved. &reg;
+    </footer>
+
+</body>
+
+</html>

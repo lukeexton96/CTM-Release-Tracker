@@ -1,0 +1,151 @@
+/*#004a8e, Lighter CTM Blue
+#002a6e, Darker CTM Blue
+#38B132, Light CTM Green
+#31AE20, Medium CTM Green 
+#FFFFFF, White 
+CTM Fonts - "SUN", "HelveticaNeue", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif 
+*/ 
+
+body{
+    background-color: #004a8e;
+    text-align: center;
+}
+
+h1 {
+    color: #38B132;
+    text-align: center;
+    font-family: "SUN", "HelveticaNeue", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    color: #31AE20;
+    text-align: center;
+    font-family: "SUN", "HelveticaNeue", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+    font-size: 30px;
+}
+
+/* Hyper-link styling */
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+/* Image Styling */
+img {
+    float: center;
+    height: 100px;
+}
+
+/* Button Styling */
+div.updateRelease{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: center;
+    text-align: center;
+}
+
+.nextRelease{
+    height:60px;
+    width: 140px;
+    background-color: #31AE20;
+    border-color: #31AE20;
+    border-style: solid;
+    color: white;
+    font-size: 16px;
+    font-family: "SUN", "HelveticaNeue", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+}
+
+.nextRelease:hover {
+    background-color: #31AE20; /* Green */
+    opacity: 0.6;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Application Title Styling */
+div.titleContainer{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: #FFFFFF;
+    width: 70%;
+    margin-left:auto; 
+    margin-right:auto;
+    display: inline-flex;
+}
+
+div.title{
+    width: 90%;
+}
+ 
+div.otherTitle{
+    width: 100%
+}
+
+div.image{
+    width: 10%;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+/* Release Table */
+table {
+    width: 70%;
+    float: center;
+    border-collapse: collapse;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+th {
+    font-family: "SUN", "HelveticaNeue", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    border: solid #31AE20;
+    padding: 25px;
+}
+
+.topLeft{
+    border: none;
+}
+
+tr.noBorders{
+    border: none;
+}
+
+td {
+    font-family: "SUN", "HelveticaNeue", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: solid #31AE20;
+    padding: 25px;
+}
+
+/* Update Release Table */
+table.updateReleaseTable{
+    width: 40%;
+    margin-left:auto; 
+    margin-right:auto;
+    border: none;
+}
+
+/* Footer Styling */
+footer{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    font-family: "SUN", "HelveticaNeue", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+    padding-top: 15px;
+}
