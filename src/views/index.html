@@ -23,31 +23,6 @@
             <img src="./images/Marvin.ico" alt="Hitch Hikers Marvin!" />
         </div>
     </div>
-
-    <!-- Update Release Button -->
-    <div class = "updateRelease">
-        <button class="nextRelease" type="button" ng-click="showme=true"> Update Next Release </button>
-    </div>
-
-    <!-- Update Next Release Table -->
-    <div class="updateReleaseTable">
-        <form name="updateReleaseForm" ng-show="showme">
-            <table class="updateReleaseTable">
-                <tr class="noBorders">
-                    <th> Date</th>
-                    <td> <input type="text" name="nextDate" ng-model="nextDate" required> </td>
-                </tr>
-                <tr>
-                    <th> Release Number </th>
-                    <td> <input type="text" name="nextReleaseNumber" ng-model="nextReleaseNumber" required> </td>
-                </tr>
-            </table>
-
-            <div class = "updateRelease">
-                <input type="submit" class="nextRelease" ng-click="showme=false" value="Update!">
-            </div>   
-        </form>             
-    </div>
         
     <!-- Release Table -->
     <div class="releaseTable">
@@ -61,20 +36,21 @@
             </tr>
              <tr> 
                 <th> Next Release </th>
-                <td> {{nextDate}} </td>
-                <td> {{nextReleaseNumber}} </td>
+                <td> NA </td>
+                <td> {{releaseCandidate.revisionId}} </td>
+                <td> {{releaseCandidate.approver}} </td>
             </tr>
             <tr> 
                 <th> Current Release </th>
-                <td> {{currentReleaseDate}} </td>
-                <td> {{currentReleaseId}} </td>
-                 <td> {{currentReleaseName}} </td>
+                <td> {{currentRelease.date}} </td>
+                <td> {{currentRelease.revisionId}} </td>
+                <td> {{currentRelease.approver}} </td>
             </tr>
             <tr> 
                 <th> Last Release </th>
-                <td> {{lastReleaseDate}} </td>
-                <td> {{lastReleaseId}} </td>
-                 <td> {{lastReleaseName}} </td>
+                <td> {{previousRelease.date}} </td>
+                <td> {{previousRelease.revisionId}} </td>
+                <td> {{previousRelease.approver}} </td>
             </tr>
         </table>
     </div>
